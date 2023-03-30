@@ -1,0 +1,117 @@
+.top01{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: yellow;
+    color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 150px;
+    height: 50px;
+    float: left;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    margin: 10px 0px 10px 0px;
+    width: 440px;
+    height: 20px;
+    font-size: 20px;
+    border: 0px;
+    outline: none;
+}
+
+
+
+#zoom_in_item {
+    width: 25px;
+    margin: 10px;
+}
+
+#zoom_in_item:hover {
+    background-color: lightgray;
+
+}
+
+.search_in {
+    width: 500px;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    background-color: white;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+}
+
+#search_btn {
+    background-color: #fff;
+    background-image: url(./zoomin2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    padding: 20px 20px;
+    width: 20px;
+    margin-top: 2px;
+
+}
+
+#search_btn:hover {
+    background-color: lightgray;
+}
+
+
+.user {
+    margin-left: 50px;
+    float: right;
+    display: flex
+}
+
+.my_favorite {
+    margin: 5px;
+    width: 100px;
+    padding: 2px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    color: black;
+}
+
+#member_btn {
+    width: 70px;
+    height: 66px;
+    border: none;
+    border-radius: 20px;
+    margin: 5px;
+    white-space: nowrap;
+    background-color: rgb(255, 255, 255);
+}
+
+button:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+#member_img {
+    width: calc(20px);
+
+}
+
+.member_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3px;
+}
