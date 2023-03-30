@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./leo01.css">
+   
+    <style>
+        a {
+            
+            text-decoration: none;
+        }
+       ul li{
+        list-style: none;
+       }
+        #category {
+            position: fixed;
+            left: 3%;
+            width: 15%;
+            height: 65%;
+            border: solid;
+            border-radius: 20px;
+        }
+
+        .item {
+            width: 80%;
+            height: 10%;
+            border-radius: 10px;
+            border-style: ridge;
+            border-color: #000;
+            text-align: center;
+            margin:5px 0 0 20px;
+            font-size: large;
+            font-weight: bolder;         
+        }
+
+        .middle {
+            height: 100%;
+            width: 100%;
+            text-align: center
+        }
+
+        .middle02 {
+            margin: 5px 500px;
+            border-style: ridge;
+            border-radius: 20px;
+            border-width: 10px;
+            border-color: rgb(176, 176, 223);
+            height: 500px;
+            width: 1150px;
+        }
+
+        .middle03 {
+            margin: 0 0 0 350px;
+            margin-top: 25px;
+            font-style: italic;
+            font-size: 35px;
+            border-style: none;
+            border-radius: 35px;
+            border-color:rgb(176, 176, 223);
+            height: 50px;
+            width: 450px;
+            text-align: center;
+        }
+
+        .center {
+            margin: 5px 500px;
+            border-style: ridge;
+            border-radius: 35px;
+            border-color: rgb(176, 176, 223);
+            border-width: 8px;
+            height: 100%;
+            width:1150px;
+        }
+        .leftcenter {
+            display: flex;
+            flex-direction: row;
+            padding: 30px;
+        }
+
+        .leftcenter01 {
+            margin-bottom:10px;
+            border-style: ridge;
+            border-radius: 35px;
+            border-color: #2a27dd;
+            border-width: 5px;
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .leftcenter02 {
+            margin: 0 15px;
+            margin-top: 5px;
+            font-style: italic;
+            font-size: 18px;
+            border-style: none;
+            border-radius: 35px;
+            border-color: #9fa4e7;
+            height: 30px;
+            width: 250px;
+            text-align: center;
+        }
+
+       
+
+        .leftcenter03 {
+            margin: 5px 10px;
+            border-style: ridge;
+            border-radius: 30px;
+            height: 130px;
+            width: 280px;
+            border-color: #130329;
+        }
+
+        .imgg {
+            margin-top: 5px;
+            background-color: #EEE;
+            height: 150px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .imggg {
+            margin: auto;
+            background-color: #EEE;
+            height: 150px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .centerdown {
+            margin: 5px 500px;
+            border-style: ridge;
+            border-radius: 35px;
+            border-color: #240557;
+            height: 100%;
+            width: 1150px;
+            border-width: 5px;
+            
+
+        }
+
+
+        .centerdown01 {
+            border-style: ridge;
+            border-radius: 10px;
+            margin: 0 0 0 0px;
+            margin-top: 5px;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+        .centerdown01 div {
+            margin: auto;
+        }
+
+        .mod_table {
+            text-align: end;
+            width: 35px;
+        }
+
+        .s01 {
+            border-style: ridge;
+            border-radius: 35px;
+            border-color: #240557;
+            width: 240px;
+            height: 40px;
+        }
+
+        .love {
+            color: #000;
+            margin: auto;
+            width: 202px;
+            height: 30px;
+
+            background-color: #ffe400;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: bolder;
+        }
+        .love02 {
+            color: #000;
+            margin: auto;
+            width: 250px;
+            height: 45px;
+            background-color: #ffe400;
+            border-radius: 20px;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        .line {
+           
+            height: 100%;
+            border-right: solid cornflowerblue;
+
+        }
+        .centerdownleo{
+            text-align: center;
+            font-size: 35px;
+            font-weight: bolder;
+            color: #000;
+        }
+        .money{
+            font-size: 45px larger;
+            font-weight: 25px;
+            color: red;
+            
+
+        }
+        .money01{
+            font-size: 30px;
+            font-weight: 25px;
+            color: red;
+        }
+        .button{
+            width: 140px;
+            height: 145px;
+        }
+        
+        .buttongo{
+        
+          border-radius: 15px;
+          background-color: #ffe400;
+          text-align: center;
+          font-weight: bolder;
+          width: 100px;
+        height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top01">
+        <div class="logo">
+            <a href=""><img src="./logo3.png" alt="公司LOGO"></a>
+
+        </div>
+        <form action="">
+            <div class="search_in">
+                <input id="search_input" type="text" placeholder="搜尋比價  請輸入關鍵字">
+                <!-- <img id="zoom_in_item" src="img/zoomin2.png" onclick=""> -->
+                <button id="search_btn"></button>
+            </div>
+
+        </form>
+
+        <div class="user">
+            <div class="my_favorite">
+                <h3>我的最愛</h3>
+
+            </div>
+            <button id="member_btn" onclick="">
+                <div class="member_item">
+                    <img id="member_img" src="./member_img.jpg">
+                    <span>XXX</span>
+                </div>
+            </button>
+        </div>
+   </div>
+   
+    <div id="category">
+        <h3 style="text-align: center;">商品分類</h3>
+        <a href="" ><div class="item">家 電</a></div>
+        <a href="" ><div class="item">3 C</a></div>
+        <a href="" ><div class="item">服 飾</a></div>
+        <a href="" ><div class="item">運 動</a></div>
+        <a href="" ><div class="item">寵 物</a></div>
+        <a href="" ><div class="item">園 藝</a></div>
+        <a href="" ><div class="item">家 具</a></div>
+    </div>
+    <div class="middle">
+        <div class="middle02">
+            <ul>
+                <li class="middle03"><a href="https://www.nike.com/tw/"><img src="./NIKE logo.png" width="60" height="45" alt=""></a></li>
+                <div class="imggg"><a href="https://www.nike.com/tw/"><img src="./sneaker.jpg" width="280" height="145"></a></div>
+                <li class="middle03"><a href="https://www.nike.com/tw/"><div class="money">$5100</div></a></li>
+                <li class="middle03"><a href="">
+                        <div class="love02">加入我的最愛</div>
+                    </a></li>
+                <li class="middle03"><a href=""> <div class="love02">前往購買</div></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="center">
+        <div class="leftcenter">
+            <div class="leftcenter01">
+                <ul>
+                    <li class="leftcenter02"><a href="https://www.nike.com/tw/"><img src="./NIKE logo.png" width="45" height="35" alt=""></a></li>
+                    <div class="imgg"><a href="https://www.nike.com/tw/"><img src="./sneaker.jpg" width="280" height="145"></a></div>
+                    <div class="leftcenter03">
+                        <li class="leftcenter02"><a href="https://www.nike.com/tw/"><div class="money01">$5100</div></a></li>
+                        <li class="leftcenter02"><a href="">
+                                <div class="love">加入我的最愛</div>
+                            </a></li>
+                        <li class="leftcenter02"><a href="https://www.nike.com/tw/"><div class="love">前往購買</a></div></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="leftcenter01">
+                <ul>
+                    <li class="leftcenter02"><a href="https://www.nike.com/tw/"><img src="./NIKE logo.png" width="45" height="35" alt=""></a></li>
+                    <div class="imgg"><a href="https://www.nike.com/tw/"><img src="./sneaker.jpg" width="280" height="145"></a></div>
+                    <div class="leftcenter03">
+                        <li class="leftcenter02"><a href="https://www.nike.com/tw/"><div class="money01">$5100</div></a></li>
+                        <li class="leftcenter02"><a href="">
+                                <div class="love">加入我的最愛</div>
+                            </a></li>
+                        <li class="leftcenter02"><a href="https://www.nike.com/tw/"><div class="love">前往購買</a></div></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="leftcenter01">
+                <ul>
+                    <li class="leftcenter02"><a href="https://www.nike.com/tw/"><img src="./NIKE logo.png" width="45" height="35" alt=""></a></li>
+                    <div class="imgg"><a href="https://www.nike.com/tw/"><img src="./sneaker.jpg" width="280" height="145"></a></div>
+                    <div class="leftcenter03">
+                        <li class="leftcenter02"><a href="https://www.nike.com/tw/"><div class="money01">$5100</div></a></li>
+                        <li class="leftcenter02"><a href="">
+                                <div class="love">加入我的最愛</div>
+                            </a></li>
+                        <li class="leftcenter02"><a href="https://www.nike.com/tw/"><div class="love">前往購買</a></div></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="centerdown">
+        <ul>
+            <li class="centerdown01">
+                <a href="https://www.nike.com/tw/" ><div class="centerdownleo">1</div></a>
+                <div class="line"></div>
+                <div class="button">
+                    <a href="https://www.nike.com/tw/"><img src="./sneaker.jpg" width="100%" height="100%"></a>
+                </div>
+                <div class="line"></div>
+                <a href="https://www.nike.com/tw/">
+                    <h3>商品品名</h3>
+                </a>
+                <div class="line"></div>
+                <div>
+                    <a href="">
+                        <div class="button">
+                            <img src="./NIKE logo.png" width="100%" height="100%">
+                        </div>
+                    </a>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <a href="https://www.nike.com/tw/">
+                        <div class="money01">
+                            $5100
+                        </div>
+                    </a>
+                </div>
+                <div class="line"></div>
+                <div calss="last01">
+                    <div>
+                        <a href="https://www.nike.com/tw/">
+                            <div class="buttongo">前往購買</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.nike.com/tw/">
+                            <div >加入我的最愛</div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="centerdown01">
+                <a href="https://www.nike.com/tw/" ><div class="centerdownleo">1</div></a>
+                <div class="line"></div>
+                <div class="button">
+                    <a href="https://www.nike.com/tw/"><img src="./sneaker.jpg" width="100%" height="100%"></a>
+                </div>
+                <div class="line"></div>
+                <a href="https://www.nike.com/tw/">
+                    <h3>商品品名</h3>
+                </a>
+                <div class="line"></div>
+                <div>
+                    <a href="">
+                        <div class="button">
+                            <img src="./NIKE logo.png" width="100%" height="100%">
+                        </div>
+                    </a>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <a href="https://www.nike.com/tw/">
+                        <div class="money01">
+                            $5100
+                        </div>
+                    </a>
+                </div>
+                <div class="line"></div>
+                <div calss="last01">
+                    <div>
+                        <a href="https://www.nike.com/tw/">
+                            <div class="buttongo">前往購買</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.nike.com/tw/">
+                            <div >加入我的最愛</div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="centerdown01">
+                <a href="https://www.nike.com/tw/" ><div class="centerdownleo">1</div></a>
+                <div class="line"></div>
+                <div class="button">
+                    <a href="https://www.nike.com/tw/"><img src="./sneaker.jpg" width="100%" height="100%"></a>
+                </div>
+                <div class="line"></div>
+                <a href="https://www.nike.com/tw/">
+                    <h3>商品品名</h3>
+                </a>
+                <div class="line"></div>
+                <div>
+                    <a href="">
+                        <div class="button">
+                            <img src="./NIKE logo.png" width="100%" height="100%">
+                        </div>
+                    </a>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <a href="https://www.nike.com/tw/">
+                        <div class="money01">
+                            $5100
+                        </div>
+                    </a>
+                </div>
+                <div class="line"></div>
+                <div calss="last01">
+                    <div>
+                        <a href="https://www.nike.com/tw/">
+                            <div class="buttongo">前往購買</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.nike.com/tw/">
+                            <div >加入我的最愛</div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
